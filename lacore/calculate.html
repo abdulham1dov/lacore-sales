@@ -30,10 +30,16 @@
 	<link href="assets/vendor/fontawesome-6.3/css/all.min.css" rel="stylesheet">
 	<link href="assets/vendor/jquery/jquery-ui.css" rel="stylesheet">
 
+    
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
 	<!-- Js I add -->    
     <script src="assets/vendor/jquery/jquery.min.js"></script>
 	<script href="assets/vendor/jquery/jquery-ui.js"></script>
 	<script href="assets/vendor/jquery/jquery.min.js"></script>
+    
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   
 	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet">
@@ -345,16 +351,18 @@
                                         </tr>
                                           <tr class="product-template hide">
                                                 <td>
-                                                    <input type="text" class="form-control productName" id="productName" value="">
+                                                    <input  type="text"
+                                                            class="form-control product-name"
+                                                            value="">
                                                 </td>
                                                 <td class="text-center product-code"></td>
                                                 <td class="text-center product-ball"></td>
-                                                <td class="text-center product-all-ball">0</td>
-                                                <td class="text-center product-brice"></td>
+                                                <td class="text-center product-all-ball"></td>
+                                                <td class="text-center product-price"></td>
                                                 <td class="text-center product-count">
-                                                    <input type="text" class="form-control" id="productCount" value="1">
+                                                    <input type="text" class="form-control product-all-count" value="">
                                                 </td>
-                                                <td class="text-center" style="width: 80px; min-width: 80px;">
+                                                <td class="text-center product-calculate" style="width: 80px; min-width: 80px;">
                                                     <button type="button" class="btn btn-primary btn-sm mr-2 btnCalculateProduct">
                                                         <i class="fa-solid fa-equals"></i>
                                                     </button>
@@ -378,6 +386,7 @@
                                       <h5>Jami Narxi</h5> <label> 3 131 313</label>
       
                                   </div>
+                                  <br>
                               </div>
                           </div>
                       </div>
