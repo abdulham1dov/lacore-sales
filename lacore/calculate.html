@@ -27,6 +27,7 @@
 	<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
 	<!-- CSS I add -->
+	<link href="assets/css/custom.css" rel="stylesheet">
 	<link href="assets/vendor/fontawesome-6.3/css/all.min.css" rel="stylesheet">
 	<link href="assets/vendor/jquery/jquery-ui.css" rel="stylesheet">
 
@@ -175,7 +176,7 @@
 
 						<li class="message-item">
 							<a href="#">
-								<img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+								<img src="assets/img/messages-12.jpg" alt="" class="rounded-circle">
 								<div>
 									<h4>Maria Hudson</h4>
 									<p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -226,13 +227,13 @@
 				<li class="nav-item dropdown pe-3">
 
 					<a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-						<img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-						<span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+						<img src="assets/img/profile-my-img.jpg" alt="Profile" class="rounded-circle">
+						<span class="d-none d-md-block dropdown-toggle ps-2">A. Abdulhamidov</span>
 					</a><!-- End Profile Iamge Icon -->
 
 					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
 						<li class="dropdown-header">
-							<h6>Kevin Anderson</h6>
+							<h6>Asilbek Abdulhamidov</h6>
 							<span>Web Designer</span>
 						</li>
 						<li>
@@ -240,7 +241,7 @@
 						</li>
 
 						<li>
-							<a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+							<a class="dropdown-item d-flex align-items-center" href="#">
 								<i class="bi bi-person"></i>
 								<span>My Profile</span>
 							</a>
@@ -250,7 +251,7 @@
 						</li>
 
 						<li>
-							<a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+							<a class="dropdown-item d-flex align-items-center" href="#">
 								<i class="bi bi-gear"></i>
 								<span>Account Settings</span>
 							</a>
@@ -260,7 +261,7 @@
 						</li>
 
 						<li>
-							<a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+							<a class="dropdown-item d-flex align-items-center" href="#">
 								<i class="bi bi-question-circle"></i>
 								<span>Need Help?</span>
 							</a>
@@ -317,39 +318,24 @@
                       <div class="card">
                           <div class="card-body">
                               <div  style="overflow-x: auto;">
-                                  <table class="table product-table">
-                                      <thead>
-                                          <tr>
-                                              <th style="width: 280px; min-width: 280px;">
-                                                  <b>Nomi</b>
-                                              </th>
-                                              <th class="text-center" style="width: 100px; min-width: 100px;">Code</th>
-                                              <th class="text-center" style="width: 100px; min-width: 100px;">Ball</th>
-                                              <th class="text-center" style="width: 100px; min-width: 100px;">Jami Ball</th>
-                                              <th class="text-center" style="width: 200px; min-width: 200px;">Narxi</th>
-                                              <th class="text-center" style="width: 100px; min-width: 100px;">Soni</th>
-                                              <th></th>
-                                              <th class="text-center2" style="width: 250px; min-width: 250px;">Jami Summa</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                            <td>
-                                                <input type="text" class="form-control" id="productName" value="Atir">
-                                            </td>
-                                            <td class="text-center">1026</td>
-                                            <td class="text-center">8</td>
-                                            <td class="text-center">16</td>
-                                            <td class="text-center">180 000</td>
-                                            <td class="text-center"><input type="text" class="form-control" id="productCount" value="2"></td>
-                                            <td class="text-center" style="width: 80px; min-width: 80px;">
-                                                <button type="button" class="btn btn-primary btn-sm mr-2    ">
-                                                    <i class="fa-solid fa-equals"></i>
-                                                </button>
-                                            </td>
-                                            <td class="text-center2">360 000</td>
-                                        </tr>
-                                          <tr class="product-template hide">
+                                    <table class="table product-table">
+                                        <thead>
+                                             <tr>
+                                                <th style="width: 270px; min-width: 270px;">
+                                                    <b>Nomi</b>
+                                                </th>
+                                                <th class="text-center" style="width: 80px; min-width: 80px;">Code</th>
+                                                <th class="text-center" style="width: 80px; min-width: 80px;">Ball</th>
+                                                <th class="text-center" style="width: 80px; min-width: 80px;">Jami Ball</th>
+                                                <th class="text-center" style="width: 180px; min-width: 180px;">Narxi</th>
+                                                <th class="text-center" style="width: 100px; min-width: 100px;">Soni</th>
+                                                <th></th>
+                                                <th class="text-center2" style="width: 180px; min-width: 180px;">Jami Summa</th>
+                                                <th></th>
+                                             </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="product-template hide">
                                                 <td>
                                                     <input  type="text"
                                                             class="form-control product-name"
@@ -362,31 +348,81 @@
                                                 <td class="text-center product-count">
                                                     <input type="text" class="form-control product-all-count" value="">
                                                 </td>
-                                                <td class="text-center product-calculate" style="width: 80px; min-width: 80px;">
-                                                    <button type="button" class="btn btn-primary btn-sm mr-2 btnCalculateProduct">
+                                                <td class="text-center product-calculate" style="width: 100px; min-width: 100px;">
+                                                    <button type="button" class="btn btn-primary btn-sm mr-2 btn-calculate-product">
                                                         <i class="fa-solid fa-equals"></i>
                                                     </button>
                                                 </td>
-                                                <td class="product-all-price">0</td>
-                                          </tr>
-                                          
-                                      </tbody>
-                                      <tfoot>
-                                          <tr>
-                                              <td colspan="8">
-                                                  <button type="button" class="btn btn-primary btn-add-product">
-                                                      <i class="fa-solid fa-plus"></i>
-                                                  </button>
-                                              </td>
-                                          </tr>
-                                      </tfoot>
-                                  </table>
-                                  <div class="calculateResults">
-                                      <h5>Jami Ball</h5> <label>24</label> <br> <br>
-                                      <h5>Jami Narxi</h5> <label> 3 131 313</label>
-      
-                                  </div>
-                                  <br>
+                                                <td class="text-center2 product-all-price"></td>
+                                                <td class="product-delete">
+                                                    <a href="#" class="btn btn-delete-product">
+                                                        <i class="fa-solid fa-trash text-danger"></i>
+                                                    </a>
+                                                </td>                                            
+                                            </tr>
+                                            <tr class="default-row">                                            
+                                                <td>
+                                                    <input type="text"
+                                                            class="form-control product-name"
+                                                            value=""
+                                                            data-hash="default-row"
+                                                            >
+                                                </td>
+                                                <td class="text-center product-code product-code-default-row"></td>
+                                                <td class="text-center product-ball product-ball-default-row"></td>
+                                                <td class="text-center product-all-ball product-all-ball-default-row"></td>
+                                                <td class="text-center product-price product-price-default-row"></td>
+                                                <td class="text-center product-count product-count-default-row">
+                                                    <input type="text" class="form-control product-all-count" data-hash="default-row" value="">
+                                                </td>
+                                                <td class="text-center product-calculate product-calculate-default-row" 
+                                                    style="width: 100px; min-width: 100px;">
+                                                    <button type="button" data-hash="default-row" class="btn btn-primary btn-sm mr-2 btn-calculate-product">
+                                                        <i class="fa-solid fa-equals"></i>
+                                                    </button>
+                                                </td>
+                                                <td class="product-all-price product-all-price-default-row"></td>
+                                                <td class="product-delete">
+                                                    <a href="#" class="btn btn-delete-product" data-hash="default-row">
+                                                        <i class="fa-solid fa-trash text-danger"></i>
+                                                    </a>
+                                                </td>                        
+                                            </tr>
+                                            
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="9">
+                                                    <button type="button" class="btn btn-primary btn-add-product">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                  
+                                    <br>
+                                    <div class="product-report my-4">                          
+                                        <!-- List group With badges -->
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                <span> Jami Ball</span> 
+                                                <span class="badge bg-primary rounded-pill all-product-ball">
+                                                    0
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                <span>
+                                                    Jami Summa
+                                                </span>
+                                                <span class="badge bg-primary rounded-pill all-product-price">
+                                                    0
+                                                </span>
+                                            </li>
+                                            
+                                        </ul><!-- End List With badges -->
+                            
+                                    </div>
                               </div>
                           </div>
                       </div>
