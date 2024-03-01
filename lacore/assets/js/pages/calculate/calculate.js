@@ -59,7 +59,7 @@ $(document).ready(function() {
         };
     });
 
-    $(document).on('change', '.product-all-count', function(e) {
+    $(document).on('keyup', '.product-all-count', function(e) {
         let newValue = $(this).val();
         let hashClass = $(this).data('hash');
 
@@ -158,5 +158,22 @@ function calculateAllBallAndPrice($productTable) {
 
     $('.calculate-page .product-report .all-product-ball').text(parseFloat(sumBall.toFixed(2)));
     $('.calculate-page .product-report .all-product-price').text(parseFloat(sumPrice.toFixed(2)));
+
+    function formatFloatWithSpaces(value) {
+        // Convert the float to a string
+        let stringValue = value.toString();
+
+        // Split the string into integer and decimal parts
+        let parts = stringValue.split('.');
+
+        // Add commas every three characters in the integer part
+        let integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+
+        // Combine the formatted integer part with the decimal part
+        let formattedValue = integerPart + (parts[1] ? '.' + parts[1] : '');
+
+        return formattedValue;
+    }
+
 }
 
